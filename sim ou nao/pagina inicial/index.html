@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emilly &amp; Julio | Nossos momentos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@300;400;500&display=swap"
+    rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main class="hero">
+        <header>
+            <a id="logo" href="index.html" aria-label="Emilly e Julio, início">e <span>+</span> j</a>
+            <nav class="menu">
+                <ul id="atalhos" aria-label="Navegação principal">
+                    <li id="item-menu"><a href="#momentos" id="abrir-historia">nossa história</a></li>
+                    <li id="item-menu"><a href="galeria.html">fotos</a></li>
+                    <li id="item-menu"><a href="../simnao.html">voltar</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section class="hero-container" id="momentos" aria-labelledby="titulo-inicial">
+            <div class="hero-copy">
+                <h1 id="titulo-inicial">Nossos momentos <span>especiais</span></h1>
+                <p id="info-gerais">emilly &amp; julio<br>este é um simples e pequeno site, mas que contém <br> lembranças e muitos momentos especiais s2 </p>
+                <button class="open-gallery" id="abrir-galeria" type="button">
+                    <span>clica aquii</span><span aria-hidden="true">↗</span>
+                </button>
+                <p class="hero-note">feito com muito carinho  <span aria-hidden="true">♡</span></p>
+            </div>
+            <img class="hero-collage" src="img/colagem1.png" alt="Colagem de fotos de Emilly e Julio juntos">
+        </section>
+        <div class="hero-mark" aria-hidden="true"><span>e</span><i>+</i><span>j</span></div>
+    </main>
+    <dialog class="password-dialog" id="dialog-senha" aria-labelledby="titulo-senha">
+        <form id="form-senha">
+            <button class="dialog-close" type="button" id="fechar-dialog" aria-label="Fechar">×</button>
+            <p class="eyebrow">nossas fotos</p>
+            <h2 id="titulo-senha">Qual é a senha?</h2>
+            <label for="senha">(A data da nossa primeira quadrilha)</label>
+            <input id="senha" name="senha" type="text" inputmode="numeric" autocomplete="off" placeholder="DD/MM/AAAA" required>
+            <p class="form-error" id="erro-senha" role="alert"></p>
+            <button class="submit-password" type="submit">abrir nossas fotos ㅤ♡<span aria-hidden="true">↗</span></button>
+        </form>
+    </dialog>
+</body>
+</html>
